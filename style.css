@@ -11,11 +11,14 @@
 .contenido{
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 2fr;
     background-color: var(--color-primario);
     width: 1440px;
-    height: 1024px;  
+    height: 1024px;
+    padding-top: 622px;
+    padding-left: -2277px;
 }
-/* logo del contenido principal*/
+/* contenido del logo principal*/
 .contenido__logo{
     width: 120px;
     height: 48px;
@@ -23,6 +26,8 @@
     padding-left: 40px;
     gap: 40px;
 }
+/* logo*/
+
 /* estilos para el input text*/
 .contenido__texto{
     color: var(--color-secundario);
