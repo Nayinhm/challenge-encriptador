@@ -14,27 +14,31 @@
     <header></header>
     
     <main class="contenido">
-        <img class="logo" src="img/Logo.png" alt="logo alura">
+        <img class="contenido__logo" src="img/Logo.png" alt="logo alura">
+        
         <section>
             <input class="contenido__texto" type="text" placeholder="Ingrese el texto aqui">
         </section>
         
-        <div class="rectangulo">
-
-            <img class="imagen" src="img/Muñeco.png" alt="Muñeco">
-            <h2>Ningún mensaje fue encontrado</h2>
-            <p class="rectangulo__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
-            
+        <div class="contenido__rectangulo">    
+                <img class="contenido__rectangulo__imagen" src="img/Muñeco.png" alt="Muñeco">
+            <section class="contenido__rectangulo__info">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p id="rectangulo__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </section>    
         </div>
         
         
-        <section class="botones">
-            <p><img class="botones__icono" src="img/bi_exclamation-circle-fill.png" alt="logo signo exclamación">Solo letras minúsculas y sin acentos</p>
-            <section class="botones__fin">
+        <div class="contenido__botones">
+            <section class="contenido__botones__info">
+                <img id="botones__icono" src="img/bi_exclamation-circle-fill.png" alt="logo signo exclamación">
+                <p id="botones__texto">Solo letras minúsculas y sin acentos</p>
+            </section>
+            <section class="contenido__botones__fin">
                 <button id="encriptar">Encriptar</button>
                 <button id="desencriptar">Desencriptar</button>
             </section>     
-        </section>
+        <div/>
         
     </main>
     <script src="/script.js"></script>

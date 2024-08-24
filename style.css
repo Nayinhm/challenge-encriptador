@@ -1,41 +1,74 @@
 
+/* contenedor principal*/
 .contenido{
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: 1fr 2fr;
     background-color: #F3F5FC;
-    width: 100%;
-    height: 100%;
-    position: relative;
+    width: 1440px;
+    height: 1024px;  
 }
-.logo{
+/* logo del contenido principal*/
+.contenido__logo{
     width: 120px;
     height: 48px;
-    top: 40px;
-    left: 40px;
-    gap: 10px;
+    padding-top: 40px;
+    padding-left: 40px;
+    gap: 40px;
 }
-
+/* estilos para el input text*/
 .contenido__texto{
     color: #0A3871;
     border: none;
     background: none;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 2%;
-    width: 80%;
-    height: 48px;
-    margin: 0 auto;
+    font-size: 32px;
+    line-height: 48px;
+    width: 680px;
+    height: 288px;
+    padding-top: 168px;
+    padding-left: 240px;
 }
 .contenido__texto::placeholder{
     color: #0A3871;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 32px;
+    line-height: 48px;
+    width: 577px;
+    height: 48px;
+    padding-top: 168px;
+    padding-left: 240px;
 }
-img{
-    grid-column: 1 / 2;
+/* contenedor principal del rectangulo*/
+.contenido__rectangulo{
+    grid-column: 3;
+    grid-row: 1 / 3;
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+    */
+    background-color: #ffffff;
+    width: 400px;
+    height: 944px;
+    padding-top: 40px;
+    padding-left: 1000px;
+    border-radius: 32px;
 }
+/*imagen del rectangulo*/
+.contenido__rectangulo__imagen{
+    width: 336px;
+    height: 304px;
+}
+/* contenedor de la info del rectangulo*/
+.contenido__rectangulo__info{
+    width: 336px;
+    height: 122px;
+}
+/*subtitulo del rectangulo*/
 h2{
     font-family: "Inter", sans-serif;
     font-weight: 700;
@@ -43,34 +76,11 @@ h2{
     text-align: center;
     width: 336px;
     height: 58px;
+    line-height: 28.8px;
     color: #343A40;
 }
-p{
-    grid-column: 1 / 2;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-}
-.botones__icono{
-    width: 16px;
-    height: 16px;
-}
-.rectangulo{
-    grid-column: 3;
-    grid-row: 1 / 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    width: 400px;
-    height: 944px;
-    top: 40px;
-    left: 1000px;
-    border-radius: 32px;
-    justify-content: center;
-    justify-self: end;
-}
-.rectangulo__texto{
+/* texto del rectangulo*/
+#rectangulo__texto{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -80,16 +90,48 @@ p{
     height: 48px;
     color: #495057;
 }
-.imagen{
-    width: 336px;
-    height: 304px;
-    top: 283px;
-    left: 1032px;
-}
-.botones{
+/* contenedor principal de info y botones*/
+.contenido__botones{
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
 }
+/* contenedor de info*/
+.contenido__botones__info{
+    display: flex;
+    flex-direction: row;
+    width: 229px;
+    height: 18px;
+    padding-top: 851px;
+    padding-left: 240px;
+    gap: 8px;
+    
+}
+/* icono de info*/
+#botones__icono{
+    width: 16px;
+    height: 16px;
+}
+/* texto de info */
+#botones__texto{
+    width: 205px;
+    height: 18px;
+    opacity: 80%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+}
+/*Conjunto de los dos botones*/
+.contenido__botones__fin{
+    width: 680px;
+    height: 67px;
+    padding-top: 885px;
+    padding-left: 240px;
+    gap: 24px;
+    display: flex;
+}
+/* Este es el botón encriptar */
 #encriptar{
     background-color: #0A3871;
     color: #ffffff;
@@ -103,6 +145,7 @@ p{
     padding: 24px;
     gap: 8px;
 }
+/* Este es el botón desencriptar*/
 #desencriptar{
     background-color: #D8DFE8;
     color: #0A3871;
@@ -116,15 +159,10 @@ p{
     padding: 24px;
     gap: 8px;
 }
-.botones__fin{
-    display: flex;
-}
+/* Este es el pie de página */
 footer{
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
     background-color: #F3F5FC;
-    padding: 10px;
 }
