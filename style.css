@@ -7,16 +7,22 @@
     --color-blanco: #ffffff;
     --color-desencriptar: #D8DFE8;
 }
+html{
+    
+}
+body{
+    width: 1440px;
+    height: 1024px;
+    padding-top: 622px;
+    padding-left: -2277px;
+}
 /* contenedor principal*/
 .contenido{
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-rows: 1fr 2fr;
     background-color: var(--color-primario);
-    width: 1440px;
-    height: 1024px;
-    padding-top: 622px;
-    padding-left: -2277px;
+    
 }
 /* contenido del logo principal*/
 .contenido__logo{
