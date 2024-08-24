@@ -2,4 +2,8 @@
 
 - Iniciando proyecto
 
-- Prueba #1 en github
+- Estructura HTML ok
+
+- Funcionalidad JS ok
+
+- En proceso estilo de la página con CSS
