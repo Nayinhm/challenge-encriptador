@@ -24,11 +24,11 @@ document.getElementById('encriptar').addEventListener('click', function() {
     const textoEncriptado = encriptarTexto(inputTexto.value);
     
     // Ocultar la imagen y el h2
-    document.querySelector('.rectangulo img').style.display = 'none';
-    document.querySelector('.rectangulo h2').style.display = 'none';
+    document.querySelector('.contenido__rectangulo img').style.display = 'none';
+    document.querySelector('.contenido__rectangulo h2').style.display = 'none';
     
     // Mostrar el texto encriptado en el párrafo
-    const parrafo = document.querySelector('.rectangulo p');
+    const parrafo = document.querySelector('.contenido__rectangulo p');
     parrafo.textContent = textoEncriptado;
     parrafo.style.display = 'block'; // Asegurar que el párrafo esté visible
 });
@@ -38,7 +38,7 @@ document.getElementById('desencriptar').addEventListener('click', function() {
     const textoDesencriptado = desencriptarTexto(inputTexto.value);
     
     // Mostrar el texto desencriptado en el párrafo
-    const parrafo = document.querySelector('.rectangulo p');
+    const parrafo = document.querySelector('.contenido__rectangulo p');
     parrafo.textContent = textoDesencriptado;
     parrafo.style.display = 'block'; // Asegurar que el párrafo esté visible
 });
