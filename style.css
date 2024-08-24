@@ -1,9 +1,17 @@
-
+:root{
+    --fuente-principal: "Inter", sans-serif;
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #495057;
+    --color-subtitulo: #343A40;
+    --color-blanco: #ffffff;
+    --color-desencriptar: #D8DFE8;
+}
 /* contenedor principal*/
 .contenido{
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
-    background-color: #F3F5FC;
+    background-color: var(--color-primario);
     width: 1440px;
     height: 1024px;  
 }
@@ -17,10 +25,10 @@
 }
 /* estilos para el input text*/
 .contenido__texto{
-    color: #0A3871;
+    color: var(--color-secundario);
     border: none;
     background: none;
-    font-family: "Inter", sans-serif;
+    font-family: var(--fuente-principal);
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
@@ -30,8 +38,8 @@
     padding-left: 240px;
 }
 .contenido__texto::placeholder{
-    color: #0A3871;
-    font-family: "Inter", sans-serif;
+    color: var(--color-secundario);
+    font-family: var(--fuente-principal);
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
@@ -51,7 +59,7 @@
     justify-content: center;
     justify-self: end;
     */
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     width: 400px;
     height: 944px;
     padding-top: 40px;
@@ -70,14 +78,14 @@
 }
 /*subtitulo del rectangulo*/
 h2{
-    font-family: "Inter", sans-serif;
+    font-family: var(--fuente-principal);
     font-weight: 700;
     font-size: 24px;
     text-align: center;
     width: 336px;
     height: 58px;
     line-height: 28.8px;
-    color: #343A40;
+    color: var(--color-subtitulo);
 }
 /* texto del rectangulo*/
 #rectangulo__texto{
@@ -88,7 +96,7 @@ h2{
     line-height: 24px;
     width: 336px;
     height: 48px;
-    color: #495057;
+    color: var(--color-terciario);
 }
 /* contenedor principal de info y botones*/
 .contenido__botones{
@@ -116,11 +124,11 @@ h2{
     width: 205px;
     height: 18px;
     opacity: 80%;
-    font-family: "Inter", sans-serif;
+    font-family: var(--fuente-principal);
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: #495057;
+    color: var(--color-terciario);
 }
 /*Conjunto de los dos botones*/
 .contenido__botones__fin{
@@ -133,8 +141,8 @@ h2{
 }
 /* Este es el botón encriptar */
 #encriptar{
-    background-color: #0A3871;
-    color: #ffffff;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -147,15 +155,15 @@ h2{
 }
 /* Este es el botón desencriptar*/
 #desencriptar{
-    background-color: #D8DFE8;
-    color: #0A3871;
+    background-color: var(--color-desencriptar);
+    color: var(--color-secundario);
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: 328px;
     height: 67px;
     border-radius: 24px;
-    border-color: #0A3871;
+    border-color: var(--color-secundario);
     padding: 24px;
     gap: 8px;
 }
@@ -164,5 +172,5 @@ footer{
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    background-color: #F3F5FC;
+    background-color: var(--color-primario);
 }
