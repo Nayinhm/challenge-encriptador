@@ -143,12 +143,14 @@ h2 {
     padding-left: 240px;
     gap: 8px;
 }
+/* icono */
 #icono{
     width: 16px;
     height: 16px;
     padding-top: 851px;
     align-self: center;
 }
+/* texto del icono */
 #texto{
     width: 229px;
     height: 18px;
